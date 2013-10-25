@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in</title>
+<link href="https://github.global.ssl.fastly.net/assets/github-dfcee7b927f1abff62f05bf200dc06f74af4151e.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://github.global.ssl.fastly.net/assets/github2-f2c706d8f7f5150d85930657a814320eea559d92.css" media="all" rel="stylesheet" type="text/css" />
+<script src="https://github.global.ssl.fastly.net/assets/frameworks-9cf67afca6308356615fd17ad1d5bb84b5a22d05.js" type="text/javascript"></script>
+<script src="https://github.global.ssl.fastly.net/assets/github-c56eac6ebe9cbcde5ed7f6c0e5f69f832b096f97.js" type="text/javascript"></script>
+<script>
+function changeValue()
+{
+	document.getElementById('signin').value = 'Clicked';
+}
+</script>
+</head>
+<body class="logged_out  env-production windows   signin">
+<div class="wrapper">
+	<div class="site clearfix">
+		<div id="site-container" class="context-loader-container" data-pjax-container>
+			<div class="auth-form" id="login">
+
+				<form accept-charset="UTF-8" action="/session" method="post">
+					<div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="wtn6VnM/5jXmr2pDPiB+qPELe5M+H9VTbjPjh88SVCs=" /></div>
+					<div class="auth-form-header">
+						<h1>Sign in</h1>
+					</div>
+					<div class="auth-form-body">
+						<label for="login_field">
+							Username or Email
+						</label>
+						<input autocapitalize="off" autofocus="autofocus" class="input-block"
+						id="login_field" name="login" tabindex="1" type="text" value="Defaut User"/>
+						<label for="password">
+							Password <a href="#">(forgot password)</a>
+						</label>
+						<input class="input-block" id="password" name="password" tabindex="2"
+						type="password" value="1a2b3c4d"/>
+						<input id="signin" class="button" name="commit" tabindex="3" type="button"
+						value="Sign in" onclick="changeValue()"/>
+					</div>
+				</form>
+			</div>
+		</div>
+		</body>
+		</html>
