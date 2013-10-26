@@ -2,10 +2,6 @@
 <html>
 <head>
 <title>Sign in</title>
-<link href="https://github.global.ssl.fastly.net/assets/github-dfcee7b927f1abff62f05bf200dc06f74af4151e.css" media="all" rel="stylesheet" type="text/css" />
-<link href="https://github.global.ssl.fastly.net/assets/github2-f2c706d8f7f5150d85930657a814320eea559d92.css" media="all" rel="stylesheet" type="text/css" />
-<script src="https://github.global.ssl.fastly.net/assets/frameworks-9cf67afca6308356615fd17ad1d5bb84b5a22d05.js" type="text/javascript"></script>
-<script src="https://github.global.ssl.fastly.net/assets/github-c56eac6ebe9cbcde5ed7f6c0e5f69f832b096f97.js" type="text/javascript"></script>
 <script>
 function changeValue()
 {
@@ -26,20 +22,25 @@ function changeValue()
 					</div>
 					<div class="auth-form-body">
 						<label for="login_field">
-							Username or Email
+							Username
 						</label>
 						<input autocapitalize="off" autofocus="autofocus" class="input-block"
 						id="login_field" name="login" tabindex="1" type="text" value="Defaut User"/>
+						<br />
 						<label for="password">
-							Password <a href="#">(forgot password)</a>
+							Password
 						</label>
 						<input class="input-block" id="password" name="password" tabindex="2"
 						type="password" value="1a2b3c4d"/>
+						<a href="#">(forgot password)</a>
+						<br />
 						<input id="signin" class="button" name="commit" tabindex="3" type="button"
 						value="Sign in" onclick="changeValue()"/>
 					</div>
 				</form>
 			</div>
 		</div>
-		</body>
-		</html>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Check Box</title>
+<script type="text/javascript" >
+function randomCheckBox()
+{
+	var length = Math.floor(1 + Math.random()*9);
+	for (i=1; i<=length; i++)
+	{
+	document.write(
+	'<input type="CHECKBOX" id="c' + i + '" /> checkbox' + i +'<br />');
+	}
+}
+</script>
+</head>
+<body>
+<div id="div">
+	<script type="text/javascript" >
+	randomCheckBox();
+	</script>
+</div>
+</body>
+</html>
