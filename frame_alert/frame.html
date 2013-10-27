@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>the frame page</title>
+<style>
+#show 
+{
+	display:none;
+}
+#input
+{
+	display:block;
+}
+</style>
+<script type="text/javascript">
+function showMessage()
+{
+	document.getElementById("input").style.display = "none";
+	document.getElementById("show").style.display = "block";
+	document.getElementById("p1").innerHTML = "The Message in t1 is:" +
+		document.getElementById("t1").value;
+}
+function back()
+{
+	document.getElementById("show").style.display = "none";
+	document.getElementById("input").style.display = "block";
+}
+</script>
+</head>
+<body>
+<div id="input">
+	<form>
+		<input id="t1" name="t1" type="text" />
+		<input id="b1" name="b1" type="button" onclick="showMessage()" value="Show" />
+	</form>
+</div>
+<div id="show">
+	<p id="p1"></p>
+	<input id="b1" name="b1" type="button" onclick="back()" value="Back" />
+</div>
+</body>
+</html>

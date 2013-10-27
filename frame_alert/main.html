@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>The Main Page</title>
+</head>
+<style>
+#main
+{
+	display:none;
+}
+</style>
+<body>
+<input id="b1" type="button" value="show the frame" onclick="showFrame();" />
+<input id="b2" type="button" value="hide the frame" onclick="hideFrame();" />
+<input id="b3" type="button" value="show the alert" onclick='alert("It is an alert");' />
+<input id="b4" type="button" value="show the confirm" onclick='console.log(confirm("It is an confirm"));' />
+<input id="b5" type="button" value="show the prompt" onclick='console.log(prompt("It is an prompt"));' />
+<div id="main">
+	<iframe id="i1" src="./frame.html"></iframe>
+</div>
+</body>
+<script type="text/javascript">
+function showFrame()
+{
+	document.getElementById("main").style.display = "block";
+}
+function hideFrame()
+{
+	document.getElementById("main").style.display = "none";
+}
+</script>
+</html>
