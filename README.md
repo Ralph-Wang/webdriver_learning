@@ -8,3 +8,4 @@ webdriver_learning
 [[定位元素/操作元素](./locate_operate/)]
 [[定位元素组/层级定位](./group_level/)]
 [[处理frame及alert](./frame_alert/)]
+[[定位新窗口](./window/)]
