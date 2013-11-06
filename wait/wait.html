@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in</title>
+<script>
+function changeValue()
+{
+	document.getElementById('theP').innerHTML = 'Clicked';
+}
+</script>
+</head>
+<body class="logged_out  env-production windows   signin">
+<div class="wrapper">
+	<div class="site clearfix">
+		<div id="site-container" class="context-loader-container" data-pjax-container>
+			<div class="auth-form" id="login">
+
+				<input id="signin" class="button" name="commit" tabindex="3" type="button"
+				value="Sign in" onclick="changeValue()"/>
+				<br />
+				<p id="theP">default</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
